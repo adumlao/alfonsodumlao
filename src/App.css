@@ -164,3 +164,268 @@ header{
   width: 35em;
   height: 18em;
 }
+
+h3{
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+p{
+  font-size: 1.3em;
+}
+
+.about-page{
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.about-pic{
+  height: 46%;
+  width: 40%;
+  margin-right: 2em;
+}
+
+.about-blurbs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25%;
+  margin-left: 2em;
+}
+
+.about-p{
+  font-size: 1.2em;
+  font-weight: 100;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+.contact-icon{
+  border-radius: 1em;
+  opacity: 0.9;
+  width: 3em;
+  height: 3em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 4em;
+}
+
+#email{
+  opacity: 0.8;
+}
+
+.contact-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-block{
+  display: flex;
+  justify-content: flex-start;
+  width: 30em;
+  align-items: center;
+  margin: 1em 3em 1em 7em;
+}
+
+.contact-link:hover{
+  color: grey;
+  font-size: 1.3em;
+}
+
+h1{
+  margin: 2em;
+  font-size: 1.7em;
+  letter-spacing: 0.2em;
+  font-weight: 300;
+}
+
+.project-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone {
+  margin: 0em 2em;
+  border-radius: 1em;
+  border: 1px solid white;
+  width: 18em;
+  height: 35em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.all-phones{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 45em;
+  align-items: center;
+  margin: 1em;
+}
+
+.phone-dot{
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.phone-line{
+  width: 5em;
+  border-bottom: 1px solid white;
+}
+
+.phone-screen{
+  border-radius: 1em;
+  border: 1px solid white;
+  width: 90%;
+  height: 77%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.phone-home{
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.comp-outer-top{
+  border-radius: 1em;
+  width: 40em;
+  height: 25em;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.comp-inner-top{
+  width: 86%;
+  height: 83%;
+  border: 1px solid white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.comp-stand{
+  width: 2em;
+  height: 7em;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.computer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 90%;
+height: 45em;
+align-items: center;
+margin: 1em;
+}
+
+.comp-base{
+  width: 22em;
+  height: 1em;
+  border: 1px solid white;
+}
+
+.main-description{
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin: 1em;
+  width: 15em;
+  text-align: center;
+}
+
+.main-description-time{
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  width: 15em;
+  text-align: center;
+}
+
+.project-blurb{
+  margin: 2em;
+  width: 60%;
+  line-height: 1.9em;
+  text-align: justify;
+}
+
+.project-git{
+  width: 3em;
+  height: 3em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.project-git:hover{
+  width: 3.5em;
+  height: 3.5em;
+  opacity: 1;
+}
+
+.bottom-blurb{
+  margin-top: 3em;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-description{
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.9em;
+}
+
+.bottom-links{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1em 0em;
+}
+
+.project-link{
+  margin-right: 4em;
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: darkgrey;
+}
+
+.project-link:hover, .work-link:hover{
+  font-size: 1.6em;
+  color: black;
+}
+
+.tech{
+  text-decoration: underline;
+}
+
+.work-links{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1em 0em;
+}
+
+.work-link{
+  margin-right: 1em;
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: darkgrey;
+}
