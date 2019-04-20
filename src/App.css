@@ -556,6 +556,10 @@ h1{
   display: none;
 }
 
+.nav-links{
+  margin: 0.5em
+}
+
 .hamburger-icon, .hamburger-links{
   display: block;
 }
@@ -733,6 +737,12 @@ header{
   .scroll-links {
     font-size: 0.7em;
     margin: 0em 3em;
+  }
+
+  .scroll-links:hover{
+    text-transform: lowercase;
+    cursor: pointer;
+    font-size: 0.7;
   }
 
   .scroll-arrow {
