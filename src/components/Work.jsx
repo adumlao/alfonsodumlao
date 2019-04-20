@@ -8,7 +8,7 @@ const Work = (props) => {
       <p className="main-description">A collaborative project between three Web Developers from General Assembly.</p>
 
       <div className="computer"
-       style={{backgroundColor: "#3d23e6"}}>
+       style={{backgroundColor: "#1500ff"}}>
 
        <div className="comp-outer-top">
         <img className="comp-inner-top"
@@ -23,7 +23,7 @@ const Work = (props) => {
       <p className="project-blurb">Work.IT is a job search app for the tech industry. Users may register/login and browse recent job posts. Additionally, a user may view more information on both the job or the company hiring.  The goal of this collaboration is to create a full-stack application- with table models that are related in the server.</p>
 
       <div className="computer"
-       style={{backgroundColor: "#3d23e6"}}>
+       style={{backgroundColor: "#1500ff"}}>
 
        <div className="comp-outer-top">
         <img className="comp-inner-top"
@@ -56,6 +56,19 @@ const Work = (props) => {
 
        </div>
 
+      </div>
+
+      <div className="scroll">
+        <div className="scroll-links"
+         onClick={props.kudos}>
+         <div className="scroll-arrow">&larr;</div>
+         <div>Previous: Kudos</div>
+        </div>
+        <div className ="scroll-links"
+         onClick={props.myBff}>
+         <div className="scroll-arrow">&rarr;</div>
+         <div>Next: My-Bff</div>
+        </div>
       </div>
 
     </div>

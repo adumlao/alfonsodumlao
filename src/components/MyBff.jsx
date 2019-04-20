@@ -80,6 +80,19 @@ const MyBff = (props) => {
 
        </div>
 
+       <div className="scroll">
+         <div className="scroll-links"
+          onClick={props.work}>
+          <div className="scroll-arrow">&larr;</div>
+          <div>Previous: Work.IT</div>
+         </div>
+         <div className ="scroll-links"
+          onClick={props.thisState}>
+          <div className="scroll-arrow">&rarr;</div>
+          <div>Next: This.State</div>
+         </div>
+       </div>
+
     </div>
   )
 }

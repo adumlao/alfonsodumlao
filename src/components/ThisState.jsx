@@ -75,9 +75,22 @@ const ThisState = (props) => {
          <div className="project-git"
           style={{backgroundImage: 'url(/media/github.png)'}}/>
         </a>
-        
+
        </div>
 
+      </div>
+
+      <div className="scroll">
+        <div className="scroll-links"
+         onClick={props.myBff}>
+         <div className="scroll-arrow">&larr;</div>
+         <div>Previous: My-Bff</div>
+        </div>
+        <div className ="scroll-links"
+         onClick={props.kudos}>
+         <div className="scroll-arrow">&rarr;</div>
+         <div>Next: Kudos</div>
+        </div>
       </div>
 
     </div>

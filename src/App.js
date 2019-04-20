@@ -13,15 +13,31 @@ import ProjectsList from './components/ProjectsList';
 import ThisState from './components/ThisState';
 import Work from './components/Work';
 
-
 class App extends Component {
   constructor(){
     super();
+
+    this.state = {
+      showHamburger: true
+    }
+
     this.myBff = this.myBff.bind(this);
     this.thisState = this.thisState.bind(this);
     this.kudos = this.kudos.bind(this);
     this.work = this.work.bind(this);
+    this.toggleHamburger = this.toggleHamburger.bind(this);
   }
+
+  toggleHamburger(e){
+    e.preventDefault();
+    this.setState(prevState => ({
+      showHamburger: !prevState.showHamburger
+    }))
+  }
+
+  componentDidUpdate() {
+    window.scrollTo(0, 0);
+ }
 
   myBff(){
     this.props.history.push('/my-bff')
@@ -39,12 +55,17 @@ class App extends Component {
     this.props.history.push('/work')
   }
 
-  render() {
+  render(props) {
     return (
       <div className="App">
+
+        <Nav {...props}
+         toggleHamburger={this.toggleHamburger}
+         showHamburger={this.state.showHamburger}/>
+
+        <main>
         <Route exact path='/' render={(props) => (
           <>
-          <Nav />
           <Header />
           <ProjectsList {...props}
            myBff={this.myBff}
@@ -52,57 +73,55 @@ class App extends Component {
            kudos={this.kudos}
            work={this.work}
           />
-          <Footer />
           </>
         )}/>
 
-        <Route exact path='/my-bff' render={() => (
+        <Route exact path='/my-bff' render={(props) => (
           <>
-          <Nav />
-          <MyBff />
-          <Footer />
+          <MyBff {...props}
+           thisState={this.thisState}
+           work={this.work}/>
           </>
         )}/>
 
-        <Route exact path='/this-state' render={() => (
+        <Route exact path='/this-state' render={(props) => (
           <>
-          <Nav />
-          <ThisState />
-          <Footer />
+          <ThisState {...props}
+           myBff={this.myBff}
+           kudos={this.kudos}/>
           </>
         )}/>
 
-        <Route exact path='/kudos' render={() => (
+        <Route exact path='/kudos' render={(props) => (
           <>
-          <Nav />
-          <Kudos />
-          <Footer />
+          <Kudos {...props}
+           thisState={this.thisState}
+           work={this.work}/>
           </>
         )}/>
 
-        <Route exact path='/work' render={() => (
+        <Route exact path='/work' render={(props) => (
           <>
-          <Nav />
-          <Work />
-          <Footer />
+          <Work {...props}
+           myBff={this.myBff}
+           kudos={this.kudos} />
           </>
         )}/>
 
         <Route exact path='/about' render={() => (
           <>
-          <Nav />
           <AboutMe />
-          <Footer />
           </>
         )}/>
 
         <Route exact path='/contact' render={() => (
           <>
-          <Nav />
           <Contact />
-          <Footer />
           </>
         )}/>
+        </main>
+
+        <Footer />
 
       </div>
     );

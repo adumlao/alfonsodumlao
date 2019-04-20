@@ -5,6 +5,7 @@ const Contact = (props) => {
     <div className="contact-page">
       <h1>Let's Collaborate!</h1>
 
+      <div className="contact-container">
       <div className="contact-block">
         <div className="contact-icon"
          id="email"
@@ -51,6 +52,7 @@ const Contact = (props) => {
          href="https://twitter.com/AlfonsoDumlao"
          target="_blank"
          rel="noopener noreferrer">@AlfonsoDumlao</a>
+      </div>
       </div>
 
     </div>
