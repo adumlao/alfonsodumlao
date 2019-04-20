@@ -62,12 +62,12 @@ const Work = (props) => {
         <div className="scroll-links"
          onClick={props.kudos}>
          <div className="scroll-arrow">&larr;</div>
-         <div>Previous: Kudos</div>
+         <div className="scroll-name">Previous: Kudos</div>
         </div>
         <div className ="scroll-links"
          onClick={props.myBff}>
          <div className="scroll-arrow">&rarr;</div>
-         <div>Next: My-Bff</div>
+         <div className="scroll-name">Next: My-Bff</div>
         </div>
       </div>
 

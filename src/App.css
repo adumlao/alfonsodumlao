@@ -6,8 +6,12 @@
 }
 
 .App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   font-family: 'Roboto';
+  justify-content: space-between;
 }
 
 nav{
@@ -84,6 +88,7 @@ header{
 .project-column{
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   animation-name: example;
   animation-duration: 1s;
@@ -191,7 +196,7 @@ p{
 .about-page{
   display: flex;
   justify-content: center;
-  margin-top: 1em;
+  margin-top: 2em;
   animation-name: example;
   animation-duration: 1s;
 }
@@ -310,8 +315,8 @@ h1{
 }
 
 .phone-home{
-  width: 2.5em;
-  height: 2.5em;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 50%;
   border: 1px solid white;
 }
@@ -486,6 +491,61 @@ h1{
   display: none;
 }
 
+@media only screen and (max-width: 1300px) {
+
+  .about-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-pic {
+    margin: 0em;
+    width: 60%
+  }
+
+  .about-blurbs {
+    margin: 2em 0em;
+    width: 60%
+  }
+
+  .hvrbox{
+    width: 22em;
+    height: 13em;
+  }
+
+  .this-state {
+    width: 16em;
+    height: 10em;
+  }
+
+  .bff {
+      width: 8em;
+      height: 2em;
+  }
+
+  .all-phones, .computer{
+    width: 90%;
+  }
+
+  .phone-home {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .phone {
+    margin: 0em 1.5em;
+    border-radius: 1.3em;
+    width: 15em;
+    height: 30em;
+  }
+
+  .project-link {
+    margin-right: 1em;
+  }
+
+}
+
 @media only screen and (max-width: 850px) {
 
 nav{
@@ -530,5 +590,164 @@ h1{
   height: 2em;
   margin-right: 2em;
 }
+
+.about-blurbs {
+  margin: 1em 0em;
+}
+
+.about-p {
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+footer{
+  font-size: 0.7em;
+}
+
+.header-bio {
+  font-size: 1em;
+  width: 65%;
+}
+
+header{
+  height: 10em;
+  margin: 0em;
+}
+
+.project-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hvrbox{
+  width: 18em;
+  height: 12em;
+}
+
+  .this-state {
+    width: 16em;
+    height: 10em;
+  }
+
+  .bff {
+    width: 8em;
+    height: 2em;
+  }
+
+  .main-description {
+    font-size: 1.3em;
+    margin: 0em;
+    width: 80%;
+  }
+
+  .main-description-time{
+    font-size: 1em
+  }
+
+  .all-phones, .computer{
+    width: 80%;
+    height: 15em;
+  }
+
+  .phone {
+    margin: 0em 2em;
+    border-radius: 0.7em;
+    border: 1px solid white;
+    width: 5em;
+    height: 11em;
+  }
+
+  .phone-dot {
+    width: 0.1em;
+    height: 0.1em;
+  }
+
+  .phone-line {
+    width: 1em;
+  }
+
+  .phone-screen {
+    border-radius: 0.5em;
+    width: 90%;
+    height: 77%;
+  }
+
+  .phone-home {
+    width: 0.5em;
+    height: 0.5em;
+  }
+
+  .comp-outer-top {
+    border-radius: 0.5em;
+    width: 14em;
+    height: 9em;
+  }
+
+  .comp-stand {
+    width: 0.4em;
+    height: 2em;
+  }
+
+  .comp-base {
+    width: 5em;
+    height: 0.3em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .project-blurb {
+    margin: 0em;
+    width: 80%;
+    line-height: 1.4em;
+   }
+
+   .bottom-blurb {
+    margin-top: 1em;
+  }
+
+  .bottom-description {
+    font-size: 0.7em;
+    line-height: 1.4em;
+  }
+
+  .project-link, .work-link {
+    margin-right: 1em;
+    font-size: 0.7em;
+  }
+
+  .project-git {
+    width: 1em;
+    height: 1em;
+  }
+
+  .scroll {
+    justify-content: center;
+    width: 40%;
+    display: flex;
+    margin-top: 3em;
+  }
+
+  .scroll-links {
+    font-size: 0.7em;
+    margin: 0em 3em;
+  }
+
+  .scroll-arrow {
+    font-size: 2em;
+  }
+
+  .scroll-name{
+    width: 3em;
+  }
+
+}
+
+@media only screen and (max-width: 420px) {
+  .phone {
+    margin: 0em 0.4em;
+  }
 
 }

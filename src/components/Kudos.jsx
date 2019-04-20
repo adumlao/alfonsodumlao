@@ -81,12 +81,12 @@ const Kudos = (props) => {
         <div className="scroll-links"
          onClick={props.thisState}>
          <div className="scroll-arrow">&larr;</div>
-         <div>Previous: This.State</div>
+         <div className="scroll-name">Previous: This.State</div>
         </div>
         <div className ="scroll-links"
          onClick={props.work}>
          <div className="scroll-arrow">&rarr;</div>
-         <div>Next: Work.IT</div>
+         <div className="scroll-name">Next: Work.IT</div>
         </div>
       </div>
 
