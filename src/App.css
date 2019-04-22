@@ -140,7 +140,7 @@ header{
 }
 
 .hvrbox:hover .hvrbox-layer_top,
-.hvrbox.active .hvrbox-layer_top {
+.hvrbox:active .hvrbox-layer_top {
 	opacity: 1;
 }
 
@@ -166,7 +166,7 @@ header{
 	display: none;
 }
 
-.hvrbox.active .hvrbox-text_mobile {
+.hvrbox:active .hvrbox-text_mobile {
 	display: block;
 }
 
@@ -491,6 +491,16 @@ h1{
   display: none;
 }
 
+.hover-link{
+  color: black;
+  font-size: 1em;
+}
+
+.hover-link:hover{
+  color: grey;
+  text-transform: uppercase;
+}
+
 @media only screen and (max-width: 1300px) {
 
   .about-page{
@@ -510,13 +520,18 @@ h1{
   }
 
   .hvrbox{
-    width: 22em;
-    height: 13em;
+    width: 29em;
+    height: 18em;
+  }
+
+  h3{
+    margin: 0.5em;
+    font-size: 1.5em;
   }
 
   .this-state {
-    width: 16em;
-    height: 10em;
+    width: 90%;
+    height: 83%;
   }
 
   .bff {
@@ -526,11 +541,17 @@ h1{
 
   .all-phones, .computer{
     width: 90%;
+    height: 38em;
   }
 
   .phone-home {
     width: 1.5em;
     height: 1.5em;
+  }
+
+  .comp-stand {
+    width: 1.5em;
+    height: 5em;
   }
 
   .phone {
@@ -544,13 +565,34 @@ h1{
     margin-right: 1em;
   }
 
+  .project-blurb {
+    margin: 0em;
+    width: 80%;
+    line-height: 1.5em;
+   }
+
 }
 
 @media only screen and (max-width: 850px) {
 
-.nav{
+  .about-pic {
+      margin: 0em;
+      width: 100vw;
+  }
+
+  .about-blurbs {
+    margin: 1em;
+    width: 95%;
+  }
+
+  .project-link:hover, .work-link:hover{
+  font-size: 0.8em;
+  color: black;
+  }
+
+  .nav{
   padding: 1.2em;
-}
+  }
 
 .all-nav-links{
   display: none;
@@ -601,7 +643,6 @@ h1{
 
 .about-p {
   font-size: 1em;
-  line-height: 1.2em;
 }
 
 footer{
@@ -609,13 +650,17 @@ footer{
 }
 
 .header-bio {
-  font-size: 1em;
-  width: 65%;
+  font-size: 1.7em;
+  width: 47%;
 }
 
 header{
-  height: 10em;
+  height: 23em;
   margin: 0em;
+}
+
+.header-container{
+  height: 23em;
 }
 
 .project-row {
@@ -624,20 +669,21 @@ header{
   justify-content: center;
 }
 
-.hvrbox{
-  width: 18em;
-  height: 12em;
+.hvrbox {
+  width: 100%;
+  height: 25em;
+  margin: 0.5em 0em;
 }
 
   .this-state {
-    width: 16em;
-    height: 10em;
+    width: 90%;
+    height: 83%;
   }
 
-  .bff {
-    width: 8em;
-    height: 2em;
-  }
+.bff {
+  width: 15em;
+  height: 4em;
+ }
 
   .main-description {
     font-size: 1.3em;
@@ -650,16 +696,16 @@ header{
   }
 
   .all-phones, .computer{
-    width: 80%;
-    height: 15em;
+    width: 100%;
+    height: 25em;
   }
 
   .phone {
     margin: 0em 2em;
     border-radius: 0.7em;
     border: 1px solid white;
-    width: 5em;
-    height: 11em;
+    width: 10em;
+    height: 20em;
   }
 
   .phone-dot {
@@ -684,42 +730,36 @@ header{
 
   .comp-outer-top {
     border-radius: 0.5em;
-    width: 14em;
-    height: 9em;
+    width: 25em;
+    height: 17em;
   }
 
   .comp-stand {
-    width: 0.4em;
-    height: 2em;
+    width: 0.7em;
+    height: 3em;
   }
 
   .comp-base {
-    width: 5em;
-    height: 0.3em;
+    width: 8em;
+    height: 0.6em;
   }
 
   p {
     font-size: 1em;
   }
 
-  .project-blurb {
-    margin: 0em;
-    width: 80%;
-    line-height: 1.4em;
-   }
-
    .bottom-blurb {
     margin-top: 1em;
   }
 
   .bottom-description {
-    font-size: 0.7em;
+    font-size: 1em;
     line-height: 1.4em;
   }
 
   .project-link, .work-link {
     margin-right: 1em;
-    font-size: 0.7em;
+    font-size: 1em;
   }
 
   .project-git {
@@ -728,7 +768,6 @@ header{
   }
 
   .scroll {
-    justify-content: center;
     width: 40%;
     display: flex;
     margin-top: 3em;
@@ -737,12 +776,6 @@ header{
   .scroll-links {
     font-size: 0.7em;
     margin: 0em 3em;
-  }
-
-  .scroll-links:hover{
-    text-transform: lowercase;
-    cursor: pointer;
-    font-size: 0.7;
   }
 
   .scroll-arrow {
@@ -755,9 +788,80 @@ header{
 
 }
 
+
+
 @media only screen and (max-width: 420px) {
+
+  header-bio {
+    font-size: 1em;
+    width: 65%;
+  }
+
+  header{
+    height: 15em;
+    margin: 0em;
+  }
+
+  .header-container{
+    height: 15em;
+  }
+
+
   .phone {
     margin: 0em 0.4em;
+  }
+
+  .hvrbox {
+    width: 100%;
+    height: 16em;
+    margin: 0.5em 0em;
+  }
+
+    .this-state {
+      width: 90%;
+      height: 83%;
+    }
+
+  .bff {
+    width: 11em;
+    height: 3em;
+   }
+
+   .all-phones, .computer {
+     width: 100%;
+     height: 18em;
+   }
+
+   .phone {
+     width: 6em;
+     height: 14.5em;
+   }
+
+   .comp-outer-top {
+     width: 16em;
+     height: 11em;
+   }
+
+   .comp-stand {
+     width: 0.4em;
+     height: 2em;
+   }
+
+   .comp-base {
+     width: 5em;
+     height: 0.3em;
+   }
+
+   .project-blurb {
+     width: 93%
+   }
+
+   .bottom-links{
+     margin: 2em 0em;
+   }
+
+   .scroll {
+    width: 55%;
   }
 
 }
