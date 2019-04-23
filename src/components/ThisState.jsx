@@ -67,11 +67,13 @@ const ThisState = (props) => {
         <a className="project-link"
          href="http://this.state.surge.sh/"
          target="_blank"
-         rel="noopener noreferrer">check out THIS.STATE
+         rel="noopener noreferrer">Check out THIS.STATE
         </a>
-        <a href="https://github.com/adumlao/this.state"
+        <a className="git-link"
+         href="https://github.com/adumlao/this.state"
          target="_blank"
          rel="noopener noreferrer">
+         <div>View Github</div>
          <div className="project-git"
           style={{backgroundImage: 'url(/media/github.png)'}}/>
         </a>

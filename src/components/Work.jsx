@@ -44,12 +44,12 @@ const Work = (props) => {
         <div className="tech-p">Additional Libraries: Dropzone</div>
        </div>
 
-       <div>
-        <a className="work-links"
+       <div className="bottom-links">
+        <a className="git-link"
          href="https://github.com/BrianCarroll112/WorkIt"
          target="_blank"
          rel="noopener noreferrer">
-          <div className="work-link">Project Github:</div>
+          <div>View Github</div>
           <div className="project-git"
            style={{backgroundImage: 'url(/media/github.png)'}}/>
         </a>

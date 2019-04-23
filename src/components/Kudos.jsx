@@ -64,11 +64,13 @@ const Kudos = (props) => {
         <a className="project-link"
          href="http://kudoskudos.surge.sh/"
          target="_blank"
-         rel="noopener noreferrer">check out KUDOS
+         rel="noopener noreferrer">Check out KUDOS
         </a>
-        <a href="https://github.com/mikebrown4000/Kudos-App"
+        <a className="git-link"
+         href="https://github.com/mikebrown4000/Kudos-App"
          target="_blank"
          rel="noopener noreferrer">
+         <div>View Github</div>
          <div className="project-git"
           style={{backgroundImage: 'url(/media/github.png)'}}/>
         </a>

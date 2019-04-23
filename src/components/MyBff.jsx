@@ -68,11 +68,13 @@ const MyBff = (props) => {
           <a className="project-link"
            href="http://my-bff.surge.sh/"
            target="_blank"
-           rel="noopener noreferrer">check out MY-BFF</a>
+           rel="noopener noreferrer">Check out MY-BFF</a>
 
-           <a href="https://github.com/adumlao/my-bff"
+           <a className="git-link"
+            href="https://github.com/adumlao/my-bff"
             target="_blank"
             rel="noopener noreferrer">
+              <div>View Github</div>
               <div className="project-git"
                style={{backgroundImage: 'url(/media/github.png)'}}/>
            </a>

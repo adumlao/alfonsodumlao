@@ -67,7 +67,7 @@ header{
   width: 100vw;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(white, #b4b4ea, white);
+  background-image: linear-gradient(#b4b4ea, white);
   justify-content: center;
   height: 100%;
 }
@@ -122,7 +122,7 @@ header{
 }
 
 .hvrbox .hvrbox-layer_top {
-	opacity: 0;
+	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -133,6 +133,8 @@ header{
 	background: white;
 	color: grey;
 	padding: 15px;
+  animation-name: example;
+  animation-duration: 1s;
 	-moz-transition: all 0.4s ease-in-out 0s;
 	-webkit-transition: all 0.4s ease-in-out 0s;
 	-ms-transition: all 0.4s ease-in-out 0s;
@@ -140,8 +142,9 @@ header{
 }
 
 .hvrbox:hover .hvrbox-layer_top,
-.hvrbox:active .hvrbox-layer_top {
-	opacity: 1;
+.hvrbox:active .hvrbox-layer_top,
+.hvrbox:focus .hvrbox-layer_top {
+	display: block;
 }
 
 .hvrbox .hvrbox-text {
@@ -166,6 +169,7 @@ header{
 	display: none;
 }
 
+.hvrbox:hover
 .hvrbox:active .hvrbox-text_mobile {
 	display: block;
 }
@@ -210,9 +214,10 @@ p{
 .about-blurbs {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 25%;
   margin-left: 2em;
+  align-items: center;
 }
 
 .about-p{
@@ -220,6 +225,7 @@ p{
   font-weight: 100;
   text-align: justify;
   line-height: 1.5em;
+  margin: 0em 0em 1em 0em;
 }
 
 .contact-icon{
@@ -387,17 +393,12 @@ h1{
 }
 
 .project-git{
-  width: 3em;
-  height: 3em;
+  padding: 1px;
+  border: 1px solid black;
+  width: 2em;
+  height: 2em;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.5;
-}
-
-.project-git:hover{
-  width: 3.5em;
-  height: 3.5em;
-  opacity: 1;
 }
 
 .bottom-blurb{
@@ -423,15 +424,16 @@ h1{
 }
 
 .project-link{
-  margin-right: 4em;
+  background-color: black;
+  padding: 0.5em;
+  margin-right: 2em;
   font-size: 1.5em;
   font-weight: bolder;
-  color: darkgrey;
+  color: white;
 }
 
 .project-link:hover, .work-link:hover{
-  font-size: 1.6em;
-  color: black;
+  background-color: grey;
 }
 
 .tech{
@@ -469,10 +471,13 @@ h1{
   font-size: 3em;
 }
 
+.scroll:hover{
+  color: black;
+}
+
 .scroll-links:hover{
-  text-transform: lowercase;
   cursor: pointer;
-  font-size: 1.2em;
+  color: black;
 }
 
 .hamburger-icon{
@@ -494,14 +499,48 @@ h1{
 .hover-link{
   color: black;
   font-size: 1em;
+  text-decoration: underline;
 }
 
 .hover-link:hover{
   color: grey;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.resume{
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  width: 60%;
+  height: 2em;
+  line-height: 2em;
+}
+
+.resume:hover{
+  background-color: grey;
+  color: black;
+}
+
+.git-link{
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color:white;
+  padding: 0em 0.5em;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.git-link:hover{
+  opacity: 0.5;
 }
 
 @media only screen and (max-width: 1300px) {
+
+  .bottom-links{
+    margin-top: 2em;
+  }
 
   .about-page{
     display: flex;
@@ -571,9 +610,27 @@ h1{
     line-height: 1.5em;
    }
 
+   .resume{
+     margin-top: 1.5em;
+   }
+
 }
 
 @media only screen and (max-width: 850px) {
+  .git-link{
+    font-size: 0.9em;
+  }
+
+  .resume{
+    color: white;
+    width: 40%;
+    height: 2em;
+    line-height: 2em;
+  }
+
+  .bottom-links{
+    margin-top: 2em;
+  }
 
   .about-pic {
       margin: 0em;
@@ -583,11 +640,6 @@ h1{
   .about-blurbs {
     margin: 1em;
     width: 95%;
-  }
-
-  .project-link:hover, .work-link:hover{
-  font-size: 0.8em;
-  color: black;
   }
 
   .nav{
@@ -759,12 +811,13 @@ header{
 
   .project-link, .work-link {
     margin-right: 1em;
-    font-size: 1em;
+    font-size: 0.8em;
+    padding: 0.7em;
   }
 
   .project-git {
-    width: 1em;
-    height: 1em;
+    width: 2em;
+    height: 2em;
   }
 
   .scroll {
@@ -791,6 +844,11 @@ header{
 
 
 @media only screen and (max-width: 420px) {
+
+  .project-link, .work-link {
+    font-size: 0.8em;
+    padding: 0.2em;
+}
 
   header-bio {
     font-size: 1em;
@@ -862,6 +920,11 @@ header{
 
    .scroll {
     width: 55%;
+  }
+
+  .header-bio {
+    font-size: 1.25em;
+    width: 50%;
   }
 
 }
