@@ -12,7 +12,7 @@ const AboutMe = (props) => {
 
         <p className="about-p">In his free time, he likes to go camping, do yoga, and sit by the fireplace with his husband, Cameron, and cat, Nina.</p>
 
-        <a className="resume" 
+        <a className="resume"
         href="./media/alfonsoresume.pdf"
         download>Download Resume</a>
       </div>
