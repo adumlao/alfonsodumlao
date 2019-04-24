@@ -35,6 +35,28 @@ const Work = (props) => {
 
       </div>
 
+      <div className="project-blurb">
+      <p>Process:</p>
+      <p>Whiteboarding models and their relations (ERD), keeps the backend aligned.  A component hierarchy breaks down which developer will work on a particular component.  Wireframes allow for additional reference to create continuity.</p>
+      </div>
+
+      <div className="imgprocess-container"
+      style={{backgroundColor: "#1500ff"}} >
+      <div>
+        <img className="workwf"
+         src="./media/workwf.jpg"
+         alt="workwf"/>
+      </div>
+      <div className="imgprocess-wf">
+        <img className="workerd"
+         src="./media/workerd.jpg"
+         alt="workerd"/>
+        <img className="workerd"
+         src="./media/workhier.jpg"
+         alt="workhier"/>
+      </div>
+      </div>
+
       <div className="bottom-blurb">
 
        <div className="bottom-description">

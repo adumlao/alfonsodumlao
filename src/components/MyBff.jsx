@@ -55,6 +55,41 @@ const MyBff = (props) => {
 
       </div>
 
+      <div className="project-blurb">
+      <p>Process:</p>
+      <p>Planning out the database by whiteboarding models and their relations (ERD), keeps the backend organized.  Wireframes, along with a component hierarchy allows for a smooth transition when we are ready to work on the front-end.</p>
+      </div>
+
+      <div className="imgprocess-container"
+      style={{backgroundColor: "#3d23e6"}} >
+      <div>
+        <img className="comp-hierarchy"
+         src="./media/bfferd.jpg"
+         alt="bfferd"/>
+      </div>
+      <div className="imgprocess-wf">
+        <img className="wireframe"
+         src="./media/bffwf1.jpg"
+         alt="bffwf1"/>
+        <img className="wireframe"
+         src="./media/bffwf2.jpg"
+         alt="bffwf2"/>
+      </div>
+      </div>
+
+      <div className="project-blurb">
+      <p>Code Snippet:</p>
+      <p>Everytime the home page loads, a random user will be on the spotlight component.  The code below helps accomplish this.</p>
+      </div>
+
+      <div className="imgprocess-container"
+      style={{backgroundColor: "#3d23e6"}} >
+        <img className="bff-snippet"
+         src="./media/bffsnip.png"
+         alt="bffsnip"/>
+      </div>
+
+
       <div className="bottom-blurb">
 
         <div className="bottom-description">

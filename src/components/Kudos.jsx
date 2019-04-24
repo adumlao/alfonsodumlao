@@ -52,6 +52,38 @@ const Kudos = (props) => {
 
       </div>
 
+      <div className="project-blurb">
+      <p>Process:</p>
+      <p>The UX Design team and the Development team propose an app that solves a client's painpoint in the financial field.  Keeping in mind a deadline of two weeks, one week for design and one week for development, the team comes up with an MVP and approves wireframes and concepts following a Design Studio exercise.  A Zeplin board is handed off by the desing team to the development team for wireframes and styleguides.</p>
+      </div>
+
+      <div className="imgprocess-container"
+      style={{backgroundColor: "#379683"}} >
+      <div className="imgprocess-wf">
+        <img className="kudoswf1"
+         src="./media/kudoswf1.png"
+         alt="kudoswf1"/>
+        <img className="kudoswf2"
+         src="./media/kudoswf2.png"
+         alt="kudoswf2"/>
+      </div>
+      </div>
+
+      <div className="project-blurb">
+      <p>Code Snippet:</p>
+      <p>The code below executes the bar graph visual for a category changing lengths after a user inputs expenses.  The bars also change color depending on how much a user has left to spend.</p>
+      </div>
+
+      <div className="kudoscode"
+      style={{backgroundColor: "#379683"}} >
+        <img className="kudossnip1"
+         src="./media/kudossnip1.png"
+         alt="kudossnip1"/>
+         <img className="kudssnip2"
+          src="./media/kudossnip2.png"
+          alt="kudssnip2"/>
+      </div>
+
       <div className="bottom-blurb">
 
        <div className="bottom-description">

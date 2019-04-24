@@ -55,6 +55,40 @@ const ThisState = (props) => {
 
       </div>
 
+      <div className="project-blurb">
+      <p>Process:</p>
+      <p>After researching and organizing which endpoints to hit in the ProPublica Congress API, Whiteboarding a component hierarchy and wireframes helps in planning and organization.</p>
+      </div>
+
+      <div className="imgprocess-container"
+      style={{backgroundColor: "grey"}} >
+      <div>
+        <img className="comp-hierarchy"
+         src="./media/tshier.jpg"
+         alt="ts-hier"/>
+      </div>
+      <div className="imgprocess-wf">
+        <img className="wireframe"
+         src="./media/tswf1.jpg"
+         alt="tswf1"/>
+        <img className="wireframe"
+         src="./media/tswf2.jpg"
+         alt="tswf2"/>
+      </div>
+      </div>
+
+      <div className="project-blurb">
+      <p>Code Snippet:</p>
+      <p>To add a stylistic element to the site, all democrats will get a blue badge, while republicans get a red one.  Conditional rendering and in-line styling accomplishes this visual.</p>
+      </div>
+
+      <div className="imgprocess-container"
+      style={{backgroundColor: "grey"}} >
+        <img className="snippet"
+         src="./media/tssnip.png"
+         alt="tssnip"/>
+      </div>
+
       <div className="bottom-blurb">
 
        <div className="bottom-description">

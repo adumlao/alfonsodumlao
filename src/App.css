@@ -145,6 +145,7 @@ header{
 .hvrbox:active .hvrbox-layer_top,
 .hvrbox:focus .hvrbox-layer_top {
 	display: block;
+  cursor: pointer;
 }
 
 .hvrbox .hvrbox-text {
@@ -536,6 +537,73 @@ h1{
   opacity: 0.5;
 }
 
+.imgprocess-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 0em;
+  width: 87%
+}
+
+.imgprocess-wf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comp-hierarchy, .snippet{
+  width: 50%
+}
+
+.wireframe{
+  margin: 1em;
+  width: 24%;
+  height: 100%;
+}
+
+.workwf{
+  width: 70%;
+}
+
+.workerd{
+  margin: 0.5em;
+  width: 32%;
+}
+
+.bff-snippet{
+  width: 35%;
+}
+
+.kudoswf1{
+  width: 35%;
+  margin-right: 0.5em;
+}
+
+.kudoswf2{
+  width: 58%;
+  margin-left: 0.5em;
+}
+
+.kudoscode{
+  display: flex;
+  justify-content: center;
+  padding: 1em 0em;
+  width: 87%
+}
+
+.kudossnip1{
+  width: 45%;
+  height: 10%;
+  margin-right: 0.5em;
+}
+
+.kudssnip2{
+  width: 45%;
+  height: 10%;
+  margin-left: 0.5em;
+}
+
 @media only screen and (max-width: 1300px) {
 
   .bottom-links{
@@ -617,6 +685,11 @@ h1{
 }
 
 @media only screen and (max-width: 850px) {
+
+  .imgprocess-container, .kudoscode{
+    width: 100%
+  }
+
   .git-link{
     font-size: 0.9em;
   }
@@ -844,6 +917,10 @@ header{
 
 
 @media only screen and (max-width: 420px) {
+
+  .imgprocess-container{
+    margin: 1em 0em;
+  }
 
   .project-link, .work-link {
     font-size: 0.8em;
